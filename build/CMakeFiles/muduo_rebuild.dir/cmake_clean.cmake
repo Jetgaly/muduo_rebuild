@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/jjet/projects/muduo_Rebuild/lib/libmuduo_rebuild.pdb"
+  "/home/jjet/projects/muduo_Rebuild/lib/libmuduo_rebuild.so"
+  "CMakeFiles/muduo_rebuild.dir/Acceptor.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Acceptor.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Buffer.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Buffer.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Channel.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Channel.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/CurrentThread.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/CurrentThread.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/DefaultPoller.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/DefaultPoller.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/EpollerPoller.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/EpollerPoller.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/EventLoop.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/EventLoop.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/EventLoopThread.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/EventLoopThread.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/EventLoopThreadPool.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/EventLoopThreadPool.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/InetAddress.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/InetAddress.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Logger.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Logger.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Poller.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Poller.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Socket.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Socket.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/TcpConnection.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/TcpConnection.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/TcpServer.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/TcpServer.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/Thread.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/Thread.cc.o.d"
+  "CMakeFiles/muduo_rebuild.dir/TimeStamp.cc.o"
+  "CMakeFiles/muduo_rebuild.dir/TimeStamp.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/muduo_rebuild.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
