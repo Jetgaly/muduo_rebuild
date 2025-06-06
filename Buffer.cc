@@ -19,7 +19,7 @@ ssize_t Buffer::readFd(int fd, int *saveErrno)
     vec[1].iov_len = sizeof extrabuf;
 
     const int iovcnt = (writable<sizeof extrabuf)?2:1;
-    const ssize_t n = readv(fd,vec,iovcnt);
+    const ssize_t n = readv(fd,vec,iovcnt);//如果这次没读完数据，在下一轮还会触发可读事件
     if(n<0){
         *saveErrno = errno;
     }

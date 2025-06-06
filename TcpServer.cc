@@ -68,8 +68,9 @@ void TcpServer::newConnection(int sockfd, const InetAddress &peerAddr)
 
 TcpServer::~TcpServer(){
     for(auto &item : connections_){
-        TcpConnectionPtr conn(item.second);
-        item.second.reset();
+        
+        TcpConnectionPtr conn(item.second);//事先拷贝一个对象，用于后面的connnectDestroyed()
+        item.second.reset();//将connections_中的智能指针reset
 
         conn->getLoop()->runInLoop(std::bind(&TcpConnection::connnectDestroyed,conn));
     }
