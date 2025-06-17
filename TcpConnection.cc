@@ -251,7 +251,7 @@ void TcpConnection::connnectDestroyed()
     channel_->remove();//把channel从poller删除
 }
 
-//关闭连接(只是关闭连接，并不销毁)
+//关闭连接(只是关闭连接，销毁)
 void TcpConnection::shutdown(){
     if(state_ == kConnected){
         setState(kDisconnecting);
