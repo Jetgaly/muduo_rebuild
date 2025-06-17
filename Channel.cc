@@ -20,7 +20,7 @@ Channel::~Channel() {
 void Channel::tie(const std::shared_ptr<void> &obj)
 {
     tie_ = obj;//weakPtr指向对应的TcpConnection，防止TcpConnection被析构调了，无法调用回调函数，因为回调函数绑定的是TcpConnection的成员函数
-    tied_ = true;
+    tied_ = true;//如果被分配了tied_肯定是true
 }
 
 // 负责在poller里面更改fd的对应事件epoll_ctl
